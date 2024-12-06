@@ -15,7 +15,11 @@ namespace ConsoleApp1
             //char a='A';
             //Console.WriteLine((int)a);
 
+
             int fffff;
+
+
+
 
 
 
