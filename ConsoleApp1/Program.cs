@@ -18,6 +18,7 @@ namespace ConsoleApp1
 
             int fffff;
             int fffff2;
+            int f;
 
 
 
