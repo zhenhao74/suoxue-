@@ -16,9 +16,6 @@ namespace ConsoleApp1
             //Console.WriteLine((int)a);
 
 
-            int fffff;
-            int fffff2;
-            int f;
 
 
 
