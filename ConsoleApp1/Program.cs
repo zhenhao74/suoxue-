@@ -14,6 +14,9 @@ namespace ConsoleApp1
         {
             //char a='A';
             //Console.WriteLine((int)a);
+            //int a = 2, b = 4;
+            //int c=(a>b)?b:a;
+            //Console.WriteLine(c);
 
             int a = 1, i = 0, b = 0;
             while (b < 1010100)
