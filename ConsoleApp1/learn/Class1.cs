@@ -10,7 +10,7 @@ namespace ConsoleApp1.learn
 {
     public class CAR
     {
-        private string name;
+        private string name;    //私有
         private string color;
         public string slh()
         {
@@ -26,12 +26,27 @@ namespace ConsoleApp1.learn
     {
         private string name;
         private string color;
+        public override string slh()
+        {
+            return string.Format($"他是{}牌子的");
+        }
         public shCAR(string name, string color):base(name,color)
         {
 
             this.name=name;
             this.color = color;
 
+        }
+
+    }
+    public class sssCAR : shCAR
+    {
+        private string name;
+        private string color;
+        public sssCAR(string name, string color):base (name,color)
+        {
+            this.name = name;
+            this.color = color;
         }
     }
     

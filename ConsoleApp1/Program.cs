@@ -31,8 +31,10 @@ namespace ConsoleApp1
             Console.WriteLine(car.slh());
             shCAR shcar = new shCAR("国产","白");
             Console.WriteLine(shcar.slh());
-            
-            
+            sssCAR fss = new sssCAR("jjjj","666");
+            Console.WriteLine(fss.slh());
+
+
 
 
 
