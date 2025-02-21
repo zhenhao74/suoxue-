@@ -28,6 +28,7 @@ namespace ConsoleApp1.learn
         private string color;
         public shCAR(string name, string color):base(name,color)
         {
+
             this.name=name;
             this.color = color;
 
