@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using ConsoleApp1.learn;
 
 namespace ConsoleApp1
@@ -18,15 +19,18 @@ namespace ConsoleApp1
             //int c=(a>b)?b:a;
             //Console.WriteLine(c);
 
-            int a = 1, i = 0, b = 0;
+            /*int a = 1, i = 0, b = 0;
             while (b < 1010100)
             {
                 a *= 2;
                 b = b + a;
                 i++;
                 Console.WriteLine($"{a},{b},{i}");
-            }
-
+            }*/
+            CAR car=new CAR("进口","黑");
+            Console.WriteLine(car.slh());
+            
+            
 
 
 
@@ -53,9 +57,9 @@ namespace ConsoleApp1
             //Console.WriteLine($"{dataType.yzl()}");
 
 
-            ForSentence sentence = new ForSentence();
-            var arr = sentence.Fcc(12, 58, "+");
-            Console.WriteLine($"{arr[0]}和{arr[1]}进行{arr[2]}运算：{arr[3]}");
+            //ForSentence sentence = new ForSentence();
+            //var arr = sentence.Fcc(12, 58, "+");
+            //Console.WriteLine($"{arr[0]}和{arr[1]}进行{arr[2]}运算：{arr[3]}");
             //Console.WriteLine($"12和55进行运算：{sentence.Jjcc(12, 55, "-")}");
             //Console.WriteLine($"44和33进行运算：{sentence.Jjcc(44, 33, "*")}");
             //Console.WriteLine($"22和33进行运算：{sentence.Jjcc(22, 33, "/")}");
