@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.learn
 {
-    public class CAR
+    public class CAR    //父类
     {
         private string name;    //私有
         private string color;
-        public string slh()
+        public virtual string slh()   
         {
             return string.Format($"它是{name}{color}色的车");
         }
@@ -22,14 +22,11 @@ namespace ConsoleApp1.learn
             this.color = color;
         }
     }
-    public class shCAR:CAR
+    public class shCAR:CAR   //子类
     {
         private string name;
         private string color;
-        public override string slh()
-        {
-            return string.Format($"他是{}牌子的");
-        }
+        
         public shCAR(string name, string color):base(name,color)
         {
 
@@ -37,9 +34,13 @@ namespace ConsoleApp1.learn
             this.color = color;
 
         }
-
+        public override string slh()
+        {
+            return string.Format($"他是{name}牌子的");
+        }
+        
     }
-    public class sssCAR : shCAR
+    public class sssCAR : shCAR  //子类的子类
     {
         private string name;
         private string color;
