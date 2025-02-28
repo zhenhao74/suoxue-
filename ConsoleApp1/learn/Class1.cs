@@ -34,7 +34,7 @@ namespace ConsoleApp1.learn
             this.color = color;
 
         }
-        public override string slh()
+        public override string slh()   //覆盖/重写
         {
             return string.Format($"他是{name}牌子的");
         }
