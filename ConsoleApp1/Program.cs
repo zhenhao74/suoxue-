@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using ConsoleApp1.learn;
+using tastclass;
 
 namespace ConsoleApp1
 {
@@ -26,16 +27,46 @@ namespace ConsoleApp1
                 b = b + a;
                 i++;
                 Console.WriteLine($"{a},{b},{i}");
-            }*/
+            }
             CAR car=new CAR("进口","黑");
             Console.WriteLine(car.slh());
             shCAR shcar = new shCAR("国产","白");
             Console.WriteLine(shcar.slh());
             sssCAR fss = new sssCAR("jjjj","666");
             Console.WriteLine(fss.slh());
+            Class1 class1 = new Class1();
+            Console.WriteLine(class1.a());*/ //dll文件
+            DateTime dateTime = new DateTime();
+            DateTime dateTime1 = new DateTime(2025,3,31);
+            DateTime dateTime2 = new DateTime(2025,3,31,13,30,30);
+            DateTime dateTime3 = new DateTime(2025, 3, 31, 13, 30, 30,DateTimeKind.Utc);
+            DateTime dateTime4 = new DateTime(999999999999999999);
+            Console.WriteLine(DateTime.MaxValue.Ticks);
+            Console.WriteLine(DateTime.MinValue.Ticks);
+            Console.WriteLine(dateTime4.ToString());
+            Console.WriteLine(DateTime.Now);//当前时间
+            Console.WriteLine(DateTime.Today);//当前日期
+            Console.WriteLine(DateTime.UtcNow);//当前UTC
+            Console.WriteLine(DateTime.MaxValue);//最大
+            Console.WriteLine(DateTime.MinValue);//最小
 
 
+            TimeSpan timeSpan = new TimeSpan(20,1,1);
+            DateTime newDate = dateTime2.Add(timeSpan);//加时间
+            DateTime newTime = dateTime3.Subtract(timeSpan);//减
+            Console.WriteLine(newTime);
 
+            var strT = "3/3/2025";
+            DateTime DT;
+            var isDateTime= DateTime.TryParse(strT, out DT);
+            if (isDateTime)
+            {
+                Console.WriteLine(DT);
+            }
+            else
+            {
+               Console.WriteLine("Error");
+            }
 
 
 
@@ -67,7 +98,7 @@ namespace ConsoleApp1
             //Console.WriteLine($"12和55进行运算：{sentence.Jjcc(12, 55, "-")}");
             //Console.WriteLine($"44和33进行运算：{sentence.Jjcc(44, 33, "*")}");
             //Console.WriteLine($"22和33进行运算：{sentence.Jjcc(22, 33, "/")}");
-
+            //时间 date
 
 
 

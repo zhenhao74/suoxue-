@@ -45,7 +45,7 @@ namespace ConsoleApp1.learn
             }
             return xxx;
         }
-        public string[] Fcc( float a, float b,string c) 
+        /*public string[] Fcc( float a, float b,string c) 
         {
             string[] fcc = new string[4];
             fcc[0] = a.ToString();
@@ -67,6 +67,6 @@ namespace ConsoleApp1.learn
                     break;
             }   
             return fcc;
-        }
+        }*/
     }
 }
